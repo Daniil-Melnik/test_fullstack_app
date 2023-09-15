@@ -14,10 +14,11 @@ function App() {
   return (
     <div>
       {todoItems.map((item) => (
-        <Form.Group key={item.id} className="app__todo-item">
-          <Form.Check type="checkbox" checked={item.done} />
-          <Form.Control type="text" value={item.text} />
-        </Form.Group>
+        <div>
+          <p>{item.name}</p>
+          <p>{item.discription}</p>
+          <img src={item.url} />
+        </div>
       ))}
       
     </div>
